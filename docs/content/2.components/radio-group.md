@@ -126,7 +126,7 @@ slots:
   [Label]{.italic}
 ::
 
-### `help` :u-badge{label="New" class="align-middle ml-2 !rounded-full" variant="subtle"}
+### `help`
 
 Like the `#label` slot, use the `#help` slot to override the content of the help text.
 
@@ -156,7 +156,11 @@ slots:
 
 ## Config
 
+::callout{icon="i-heroicons-light-bulb"}
+Use the `ui` prop to override the radio group config and the `uiRadio` prop to override the radio config.
+::
+
 ::tabs
-  :component-preset{label="Radio" slug="Radio"}
-  :component-preset{label="RadioGroup"}
+  :component-preset{label="Radio (uiRadio)" slug="Radio"}
+  :component-preset{label="RadioGroup (ui)"}
 ::
