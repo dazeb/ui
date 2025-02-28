@@ -1,4 +1,4 @@
-import Fuse from 'fuse.js'
+import type { FuseResultMatch } from 'fuse.js'
 import type { Avatar } from './avatar'
 
 export interface Command {
@@ -13,7 +13,7 @@ export interface Command {
   shortcuts?: string[]
   group?: string
   score?: number
-  matches?: Fuse.FuseResultMatch[]
+  matches?: FuseResultMatch[]
   [key: string]: any
 }
 
@@ -24,6 +24,6 @@ export interface Group {
   commands?: Command[]
   search?: (...args: any[]) => any[] | Promise<any[]>
   filter?: (...args: any[]) => Command[]
-  static?: Boolean
+  static?: boolean
   [key: string]: any
 }

@@ -142,7 +142,7 @@ props:
 
 ### Loading
 
-Use the `loading` prop to show a loading icon and disable the Input.
+Use the `loading` prop to show a loading icon in the Input.
 
 Use the `loading-icon` prop to set a different icon or change it globally in `ui.input.default.loadingIcon`. Defaults to `i-heroicons-arrow-path-20-solid`.
 
@@ -172,6 +172,13 @@ baseProps:
   class: 'w-full'
 ---
 ::
+
+### Limit
+
+Use the `maxlength` prop to limit the length of the Input.
+
+:component-example{component="input-example-max-length"}
+
 
 ## Slots
 
